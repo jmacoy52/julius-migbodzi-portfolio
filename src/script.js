@@ -165,10 +165,12 @@ export const initContactForm = async () => {
   }
 };
 
-export default {
+const emailJSExports = {
   initEmailJS,
   sendEmail,
   handleFormSubmit,
   loadEmailJSSDK,
   initContactForm
 };
+
+export default emailJSExports;
