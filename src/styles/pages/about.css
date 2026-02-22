@@ -1,0 +1,531 @@
+﻿﻿.about-page {
+  background-color: #ffffff;
+}
+
+.about-hero {
+  padding: 80px 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  color: #0a2540;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.about-hero .subtitle {
+  font-size: 20px;
+  color: #0056b3;
+  font-weight: 500;
+}
+
+/* Journey Section */
+.about-journey {
+  padding: 80px 60px;
+  background-color: #f8f9fa;
+}
+
+.journey-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.journey-content h2 {
+  font-size: 36px;
+  color: #0a2540;
+  margin-bottom: 40px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.journey-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #0056b3, #1f4fd8);
+  border-radius: 2px;
+}
+
+.journey-text p {
+  font-size: 17px;
+  color: #4b5563;
+  line-height: 1.9;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.journey-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Approach Section */
+.about-approach {
+  padding: 80px 60px;
+  background-color: #ffffff;
+}
+
+.approach-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.approach-content h2 {
+  font-size: 36px;
+  color: #0a2540;
+  margin-bottom: 50px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.approach-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #0056b3, #1f4fd8);
+  border-radius: 2px;
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.approach-item {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  padding: 35px;
+  border-radius: 12px;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+  transition: all 300ms ease;
+}
+
+.approach-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 86, 179, 0.12);
+  border-color: #0056b3;
+}
+
+.approach-item h3 {
+  font-size: 20px;
+  color: #0a2540;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.approach-item p {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Narrative Section */
+.about-narrative {
+  padding: 80px 60px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.narrative-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.narrative-content h2 {
+  font-size: 36px;
+  color: #0a2540;
+  margin-bottom: 24px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.narrative-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #0056b3, #1f4fd8);
+  border-radius: 2px;
+}
+
+.narrative-content p {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Philosophy Section Styling */
+.philosophy-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.philosophy-intro {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.pillars-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.pillar {
+  background: linear-gradient(135deg, #f0f6ff 0%, #e8f1ff 100%);
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 4px solid #1f4fd8;
+  transition: all 300ms ease;
+}
+
+.pillar:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(31, 79, 216, 0.15);
+}
+
+.pillar-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.pillar h4 {
+  font-size: 18px;
+  color: #0a2540;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.pillar p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.philosophy-main {
+  font-size: 15px;
+  color: #4b5563;
+  font-style: italic;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.philosophy-callout {
+  background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.philosophy-callout p {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Impact Section */
+.about-impact {
+  padding: 80px 60px;
+  background: linear-gradient(135deg, #0a2540 0%, #1a365d 100%);
+  text-align: left;
+}
+
+.impact-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.impact-content h2 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.impact-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #60a5fa, #93c5fd);
+  border-radius: 2px;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.impact-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.impact-number {
+  font-size: 52px;
+  font-weight: 700;
+  color: #60a5fa;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.impact-label {
+  font-size: 14px;
+  color: #cbd5e1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.impact-summary {
+  font-size: 17px;
+  color: #e2e8f0;
+  line-height: 1.8;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .approach-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .impact-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 50px 30px;
+  }
+
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-hero .subtitle {
+    font-size: 16px;
+  }
+
+  .about-journey,
+  .about-approach,
+  .about-narrative,
+  .about-impact {
+    padding: 50px 30px;
+  }
+
+  .journey-content,
+  .approach-content,
+  .narrative-content {
+    text-align: left;
+  }
+
+  .journey-content h2,
+  .approach-content h2,
+  .narrative-content h2,
+  .impact-content h2 {
+    font-size: 28px;
+  }
+
+  .journey-text p {
+    font-size: 15px;
+  }
+
+  .approach-item {
+    padding: 25px;
+  }
+
+  .approach-item h3 {
+    font-size: 18px;
+  }
+
+  .approach-item p {
+    font-size: 14px;
+  }
+
+  .narrative-content p {
+    font-size: 14px;
+  }
+
+  .pillars-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .philosophy-intro {
+    margin-bottom: 30px;
+  }
+
+  .philosophy-callout {
+    padding: 25px;
+  }
+
+  .philosophy-callout p {
+    font-size: 14px;
+  }
+
+  .impact-number {
+    font-size: 40px;
+  }
+
+  .impact-label {
+    font-size: 12px;
+  }
+
+  .impact-summary {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 40px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 24px;
+  }
+
+  .about-hero .subtitle {
+    font-size: 14px;
+  }
+
+  .about-journey,
+  .about-approach,
+  .about-narrative,
+  .about-impact {
+    padding: 40px 20px;
+  }
+
+  .journey-content,
+  .approach-content,
+  .narrative-content {
+    text-align: left;
+  }
+
+  .journey-content h2,
+  .approach-content h2,
+  .narrative-content h2,
+  .impact-content h2 {
+    font-size: 22px;
+  }
+
+  .journey-text p {
+    font-size: 14px;
+  }
+
+  .approach-item {
+    padding: 20px;
+  }
+
+  .approach-item h3 {
+    font-size: 16px;
+  }
+
+  .approach-item p {
+    font-size: 13px;
+  }
+
+  .narrative-content h2 {
+    font-size: 20px;
+  }
+
+  .narrative-content p {
+    font-size: 13px;
+  }
+
+  .philosophy-intro {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .pillars-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .pillar {
+    padding: 20px;
+  }
+
+  .pillar h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .pillar p {
+    font-size: 13px;
+  }
+
+  .philosophy-main {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .philosophy-callout {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .philosophy-callout p {
+    font-size: 13px;
+  }
+
+  .impact-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+  }
+
+  .impact-number {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .impact-label {
+    font-size: 11px;
+  }
+
+  .impact-summary {
+    font-size: 14px;
+  }
+}

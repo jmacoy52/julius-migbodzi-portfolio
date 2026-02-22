@@ -1,0 +1,161 @@
+/* Navigation Cards Styles */
+.navigation-cards {
+  padding: 60px 20px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.nav-cards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.nav-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #f9fafb 0%, #f0f4f8 100%);
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+  text-align: center;
+  transition: all 0.3s ease;
+  gap: 15px;
+}
+
+.nav-card-link:hover .nav-card {
+  border-color: #0056b3;
+  box-shadow: 0 8px 24px rgba(0, 86, 179, 0.15);
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+}
+
+.nav-card-icon {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.nav-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a2540;
+  margin: 0;
+}
+
+.nav-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navigation-cards {
+    padding: 50px 20px;
+  }
+
+  .nav-cards-container {
+    gap: 20px;
+  }
+
+  .nav-card {
+    padding: 30px 20px;
+  }
+
+  .nav-card-icon {
+    font-size: 36px;
+  }
+
+  .nav-card h3 {
+    font-size: 16px;
+  }
+
+  .nav-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-cards {
+    padding: 40px 20px;
+  }
+
+  .nav-cards-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .nav-card {
+    padding: 25px 20px;
+  }
+
+  .nav-card-icon {
+    font-size: 32px;
+  }
+
+  .nav-card h3 {
+    font-size: 16px;
+  }
+
+  .nav-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation-cards {
+    padding: 30px 15px;
+  }
+
+  .nav-cards-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .nav-card {
+    padding: 20px 15px;
+    gap: 10px;
+  }
+
+  .nav-card-icon {
+    font-size: 28px;
+  }
+
+  .nav-card h3 {
+    font-size: 15px;
+  }
+
+  .nav-card p {
+    font-size: 12px;
+  }
+}
+
+/* Dark Mode Styles */
+:root.dark-mode .navigation-cards {
+  background: #0f0f1a !important;
+  border-top-color: #2a2a3e !important;
+}
+
+:root.dark-mode .nav-card {
+  background: linear-gradient(135deg, #1a1a2e 0%, #252540 100%) !important;
+  border-color: #2a2a3e !important;
+}
+
+:root.dark-mode .nav-card:hover {
+  background: linear-gradient(135deg, #252540 0%, #1a1a2e 100%) !important;
+  border-color: #60a5fa !important;
+}
+
+:root.dark-mode .nav-card h3 {
+  color: #e8e8e8 !important;
+}

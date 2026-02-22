@@ -68,3 +68,60 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+## Contact Form - EmailJS Setup
+
+The contact form uses EmailJS to send messages directly to Gmail. To enable this feature:
+
+### Step 1: Create EmailJS Account
+1. Go to https://www.emailjs.com/ and create a free account
+2. Verify your email address
+
+### Step 2: Add Email Service (Gmail)
+1. In EmailJS dashboard, click "Email Services" → "Add New Service"
+2. Select "Gmail" and connect your Google account
+3. Note the **SERVICE_ID** (e.g., `service_xxxxx`)
+
+### Step 3: Create Email Template
+1. Click "Email Templates" → "Create New Template"
+2. Design your email template. Example template to see sender's email:
+
+```
+You have a new message from your portfolio contact form:
+
+From: {{from_name}}
+Email: {{from_email}}
+Company: {{company}}
+
+Subject: {{subject}}
+
+Message:
+{{message}}
+```
+
+**Important:** Make sure to include `{{from_email}}` in your template so you can see the sender's email address!
+
+3. Save the template and note the **TEMPLATE_ID** (e.g., `template_xxxxx`)
+
+### Step 4: Get Your User ID
+1. Go to "Account" → "Integration" or "API Keys"
+2. Find your **USER_ID** (also called Public Key, e.g., `xxxxx`)
+
+### Step 5: Configure script.js
+Open `src/script.js` and replace the placeholder values:
+
+```
+javascript
+const EMAILJS_CONFIG = {
+  USER_ID: 'your_actual_user_id',
+  SERVICE_ID: 'your_actual_service_id',
+  TEMPLATE_ID: 'your_actual_template_id'
+};
+```
+
+### Step 6: Test
+Run `npm start` and test the contact form. Messages should now be delivered to your Gmail inbox.
+
+**Note:** The free EmailJS plan includes 200 emails/month. For more details, visit https://www.emailjs.com/pricing/

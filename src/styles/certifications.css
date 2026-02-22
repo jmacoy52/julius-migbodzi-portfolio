@@ -1,0 +1,143 @@
+/* CERTIFICATIONS & TRAINING */
+.certifications {
+  padding: 80px 60px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.certifications h2 {
+  font-size: 28px;
+  color: #0a2540;
+  margin-bottom: 50px;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.certification-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.certification-card .icon {
+  font-size: 28px;
+  color: #1f4fd8;
+  margin-bottom: 15px;
+}
+
+.certification-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.certification-card p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .certifications {
+    padding: 50px 30px;
+  }
+
+  .certifications h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .certification-card {
+    padding: 24px;
+  }
+
+  .certification-card .icon {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .certification-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .certification-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certifications {
+    padding: 40px 20px;
+  }
+
+  .certifications h2 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .certifications-grid {
+    gap: 16px;
+  }
+
+  .certification-card {
+    padding: 20px;
+  }
+
+  .certification-card .icon {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .certification-card h3 {
+    font-size: 14px;
+  }
+
+  .certification-card p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+/* Dark Mode Styles */
+:root.dark-mode .certifications {
+  background-color: #0f0f1a !important;
+}
+
+:root.dark-mode .certifications h2 {
+  color: #e8e8e8 !important;
+}
+
+:root.dark-mode .certification-card {
+  background-color: #1a1a2e !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+:root.dark-mode .certification-card .icon {
+  color: #60a5fa;
+}
+
+:root.dark-mode .certification-card h3 {
+  color: #e8e8e8 !important;
+}
+
+:root.dark-mode .certification-card p {
+  color: #b0b0b0 !important;
+}

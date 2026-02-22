@@ -1,0 +1,395 @@
+/* Global Dark Mode Styles */
+:root.dark-mode {
+  --bg-primary: #0f0f1a;
+  --bg-secondary: #1a1a2e;
+  --bg-tertiary: #252542;
+  --text-primary: #e8e8e8;
+  --text-secondary: #b0b0b0;
+  --text-muted: #888888;
+  --border-color: #2d2d44;
+  --card-bg: #1a1a2e;
+  --hover-bg: #252542;
+  --gradient-start: #1a1a2e;
+  --gradient-end: #252542;
+}
+
+/* Apply dark mode to body */
+:root.dark-mode body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Dark mode for main content areas */
+:root.dark-mode .main-content {
+  background-color: var(--bg-primary);
+}
+
+/* Dark mode for all sections */
+:root.dark-mode section,
+:root.dark-mode .hero-section,
+:root.dark-mode .about-hero,
+:root.dark-mode .about-journey,
+:root.dark-mode .about-approach,
+:root.dark-mode .about-narrative,
+:root.dark-mode .about-impact {
+  background-color: var(--bg-primary) !important;
+  background: var(--bg-primary) !important;
+}
+
+/* Dark mode for cards */
+:root.dark-mode .card,
+:root.dark-mode .approach-card,
+:root.dark-mode .highlight-item,
+:root.dark-mode .competency-card,
+:root.dark-mode .experience-card,
+:root.dark-mode .certification-card,
+:root.dark-mode .project-card,
+:root.dark-mode .insight-card,
+:root.dark-mode .navigation-card {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Dark mode for text */
+:root.dark-mode h1,
+:root.dark-mode h2,
+:root.dark-mode h3,
+:root.dark-mode h4,
+:root.dark-mode h5,
+:root.dark-mode h6 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode p,
+:root.dark-mode .subtitle,
+:root.dark-mode .hero-statement,
+:root.dark-mode .journey-text p,
+:root.dark-mode .approach-text p,
+:root.dark-mode .narrative-text p {
+  color: var(--text-secondary) !important;
+}
+
+/* Dark mode for links */
+:root.dark-mode a {
+  color: #60a5fa !important;
+}
+
+:root.dark-mode a:hover {
+  color: #93c5fd !important;
+}
+
+/* Dark mode specific components */
+:root.dark-mode .hero-section {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%) !important;
+}
+
+:root.dark-mode .hero-text h1 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .hero-role {
+  color: #60a5fa !important;
+}
+
+:root.dark-mode .hero-statement {
+  color: var(--text-secondary) !important;
+}
+
+:root.dark-mode .btn-primary {
+  background-color: #1e40af !important;
+}
+
+:root.dark-mode .btn-primary:hover {
+  background-color: #1d4ed8 !important;
+}
+
+:root.dark-mode .btn-secondary {
+  border-color: #60a5fa !important;
+  color: #60a5fa !important;
+}
+
+:root.dark-mode .btn-secondary:hover {
+  background-color: #1e40af !important;
+  color: #ffffff !important;
+}
+
+/* About page dark mode */
+:root.dark-mode .about-hero {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%) !important;
+}
+
+:root.dark-mode .about-hero-text h1 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .about-hero-text .subtitle {
+  color: #60a5fa !important;
+}
+
+:root.dark-mode .about-journey,
+:root.dark-mode .about-approach,
+:root.dark-mode .about-narrative,
+:root.dark-mode .about-impact {
+  background-color: var(--bg-primary) !important;
+}
+
+:root.dark-mode .journey-content h2,
+:root.dark-mode .approach-content h2,
+:root.dark-mode .narrative-content h2,
+:root.dark-mode .impact-content h2 {
+  color: var(--text-primary) !important;
+}
+
+/* Impact stats */
+:root.dark-mode .impact-stat-item {
+  background-color: var(--bg-secondary) !important;
+}
+
+:root.dark-mode .impact-number {
+  color: #60a5fa !important;
+}
+
+:root.dark-mode .impact-label {
+  color: var(--text-secondary) !important;
+}
+
+/* Philosophy callout */
+:root.dark-mode .philosophy-callout {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+:root.dark-mode .philosophy-callout p {
+  color: var(--text-primary) !important;
+}
+
+/* Navigation cards */
+:root.dark-mode .navigation-card {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+}
+
+:root.dark-mode .navigation-card h3 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .navigation-card p {
+  color: var(--text-secondary) !important;
+}
+
+/* Gallery showcase */
+:root.dark-mode .gallery-showcase {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Philosophy snippet */
+:root.dark-mode .philosophy-snippet {
+  background-color: var(--bg-secondary) !important;
+}
+
+:root.dark-mode .philosophy-snippet h2 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .philosophy-snippet p {
+  color: var(--text-secondary) !important;
+}
+
+/* Credibility stats */
+:root.dark-mode .credibility-stats {
+  background-color: var(--bg-secondary) !important;
+}
+
+:root.dark-mode .stat-item .stat-number {
+  color: #60a5fa !important;
+}
+
+:root.dark-mode .stat-item .stat-label {
+  color: var(--text-secondary) !important;
+}
+
+/* CTA Section */
+:root.dark-mode .cta-section {
+  background-color: var(--bg-secondary) !important;
+}
+
+:root.dark-mode .cta-section h2 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .cta-section p {
+  color: var(--text-secondary) !important;
+}
+
+/* Projects page */
+:root.dark-mode .projects-page {
+  background-color: var(--bg-primary) !important;
+}
+
+:root.dark-mode .projects-grid {
+  background-color: var(--bg-primary) !important;
+}
+
+:root.dark-mode .project-card {
+  background-color: var(--card-bg) !important;
+}
+
+:root.dark-mode .project-card h3 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .project-card p {
+  color: var(--text-secondary) !important;
+}
+
+/* Safety Insights */
+:root.dark-mode .safety-insights-page {
+  background-color: var(--bg-primary) !important;
+}
+
+:root.dark-mode .insights-grid {
+  background-color: var(--bg-primary) !important;
+}
+
+:root.dark-mode .insight-card {
+  background-color: var(--card-bg) !important;
+}
+
+:root.dark-mode .insight-card h3 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .insight-card p {
+  color: var(--text-secondary) !important;
+}
+
+:root.dark-mode .insight-meta {
+  color: var(--text-muted) !important;
+}
+
+/* Contact page */
+:root.dark-mode .contact-page {
+  background-color: var(--bg-primary) !important;
+}
+
+:root.dark-mode .contact-container h1 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .contact-info-item p {
+  color: var(--text-secondary) !important;
+}
+
+:root.dark-mode .contact-form input,
+:root.dark-mode .contact-form textarea {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .contact-form input::placeholder,
+:root.dark-mode .contact-form textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+
+/* Competencies */
+:root.dark-mode .competencies-section {
+  background-color: var(--bg-primary) !important;
+}
+
+:root.dark-mode .competencies-grid {
+  background-color: var(--bg-primary) !important;
+}
+
+:root.dark-mode .competency-card {
+  background-color: var(--card-bg) !important;
+}
+
+:root.dark-mode .competency-card h3 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .competency-card p {
+  color: var(--text-secondary) !important;
+}
+
+/* Experience Summary */
+:root.dark-mode .experience-section {
+  background-color: var(--bg-primary) !important;
+}
+
+:root.dark-mode .experience-item {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+}
+
+:root.dark-mode .experience-item h3 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .experience-item .company,
+:root.dark-mode .experience-item .duration {
+  color: var(--text-secondary) !important;
+}
+
+:root.dark-mode .experience-item ul li {
+  color: var(--text-secondary) !important;
+}
+
+/* Certifications */
+:root.dark-mode .certifications-section {
+  background-color: var(--bg-primary) !important;
+}
+
+:root.dark-mode .certification-card {
+  background-color: var(--card-bg) !important;
+}
+
+:root.dark-mode .certification-card h3 {
+  color: var(--text-primary) !important;
+}
+
+:root.dark-mode .certification-card p {
+  color: var(--text-secondary) !important;
+}
+
+/* Footer */
+:root.dark-mode .footer {
+  background-color: var(--bg-secondary) !important;
+  border-top-color: var(--border-color) !important;
+}
+
+:root.dark-mode .footer-content p {
+  color: var(--text-secondary) !important;
+}
+
+:root.dark-mode .footer-links a {
+  color: var(--text-secondary) !important;
+}
+
+:root.dark-mode .footer-links a:hover {
+  color: #60a5fa !important;
+}
+
+/* Smooth transitions for dark mode */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Global scrollbar styling for dark mode */
+:root.dark-mode::-webkit-scrollbar {
+  width: 10px;
+}
+
+:root.dark-mode::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+:root.dark-mode::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 5px;
+}
+
+:root.dark-mode::-webkit-scrollbar-thumb:hover {
+  background: #3d3d5c;
+}

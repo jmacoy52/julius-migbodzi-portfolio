@@ -1,0 +1,117 @@
+/* CTA Section Styles */
+.cta-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+  color: #ffffff;
+}
+
+.cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.cta-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.cta-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+}
+
+.cta-section .btn {
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.cta-section .btn-primary {
+  background: #ffffff;
+  color: #0056b3;
+}
+
+.cta-section .btn-primary:hover {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cta-section {
+    padding: 60px 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 32px;
+  }
+
+  .cta-section p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 50px 20px;
+  }
+
+  .cta-container {
+    gap: 25px;
+  }
+
+  .cta-section h2 {
+    font-size: 28px;
+  }
+
+  .cta-section p {
+    font-size: 14px;
+  }
+
+  .cta-section .btn {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-section {
+    padding: 40px 15px;
+  }
+
+  .cta-container {
+    gap: 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 22px;
+  }
+
+  .cta-section p {
+    font-size: 13px;
+  }
+
+  .cta-section .btn {
+    padding: 12px 25px;
+    font-size: 13px;
+    width: 100%;
+  }
+}
