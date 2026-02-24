@@ -11,7 +11,7 @@ function PhilosophySnippet() {
           and employee engagement, we can create environments where every team member goes home safely, every single day.
         </p>
         <div className="philosophy-highlight">
-          <span>Think Safety. work safety.</span>
+          <span>Think Safety, Work Safely.</span>
         </div>
       </div>
     </section>

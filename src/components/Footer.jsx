@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-logo">
           <Link to="/" className="logo">JULIUS MIGBODZI</Link>
-          <p className="footer-tagline">Safety Professional</p>
+          <p className="footer-tagline">Occupational Health and Safety Professional</p>
         </div>
 
         <nav className="footer-nav">

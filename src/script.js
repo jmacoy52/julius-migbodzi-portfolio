@@ -44,9 +44,9 @@ export const sendEmail = async (formData) => {
       to_email: 'juliusmigb@gmail.com'
     };
 
-    console.log('Sending email with params:', emailParams);
+   /* console.log('Sending email with params:', emailParams);
     console.log('Using Service ID:', EMAILJS_CONFIG.SERVICE_ID);
-    console.log('Using Template ID:', EMAILJS_CONFIG.TEMPLATE_ID);
+    console.log('Using Template ID:', EMAILJS_CONFIG.TEMPLATE_ID);*/
 
     const response = await window.emailjs.send(
       EMAILJS_CONFIG.SERVICE_ID,
